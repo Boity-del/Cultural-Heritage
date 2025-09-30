@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Basotho Cultural Heritage</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body class="home">
+  <header>
+    <nav>
+      <h2>Welcome to Basotho Cultural Heritage</h2>
+      <div>
+        <a href="index.html" class="active">Home</a>
+        <a href="traditional clothing.html">Clothing</a>
+        <a href="music and dance.html">Music & Dance</a>
+        <a href="crafts and art.html">Crafts & Art</a>
+        <a href="Hosting.html">Hosting</a>
+        <a href="contact and feedback.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+    
+      <p>
+        <h1>Lumela! Welcome to Basotho Cultural Website This website is designed to celebrate and preserve the sophisticated cultural heritage of the Basotho peaople.
+      It's also about learning more about the Basotho culture. Here we got the Basotho Traditional Clothing, Music and Dances that Basotho perform lastly we offer 
+      Crafts and Art done by Basotho. If you want to explore with us then wyat are you waiting for ,tag along.</h1>
+      </p>
+
+      <div class="carousel-container">
+        <h3>Showcasing Basotho Culture</h3>
+        <div class="carousel">
+          <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+          <div class="slides">
+            <img src="images/Bale.JPG" alt="Bale">
+            <img src="images/liletswa.jpg" alt="Liletswa">
+            <img src="images/makoloane.jpg" alt="Makoloane">
+            <img src="images/mohohoma.jpg" alt="Mohohoma">
+            <img src="images/morabaraba.jpg" alt="Morabaraba">
+          </div>
+          <button class="next" onclick="changeSlide(1)">&#10095;</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slides img');
+    const totalSlides = slides.length;
+
+    function showSlide(index) {
+      if (index >= totalSlides) currentSlide = 0;
+      if (index < 0) currentSlide = totalSlides - 1;
+      slides.forEach((slide, i) => {
+        slide.style.opacity = i === currentSlide ? 1 : 0;
+      });
+    }
+
+    function changeSlide(direction) {
+      currentSlide += direction;
+      showSlide(currentSlide);
+    }
+
+    // Auto-slide every 3 seconds
+    setInterval(() => {
+      changeSlide(1);
+    }, 3000);
+
+    // Initialize
+    showSlide(0);
+  </script>
+</body>
+</html>

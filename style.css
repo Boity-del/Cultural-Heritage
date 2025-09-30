@@ -1,0 +1,219 @@
+/* General */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('images/basotho horses.jpg');
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: greenyellow;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+
+
+header {
+  background: transparent;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+header h2 {
+  color: black;
+}
+
+header .tagline {
+  font-size: 1.1em;
+  margin-top: 5px;
+  opacity: 0.9;
+}
+
+/* Navigation */
+nav {
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-left: 60px;
+}
+
+.home nav {
+  flex-direction: column;
+  align-items: center;
+}
+
+.home nav div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: royalblue;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1em;
+  border-radius: 5px;
+}
+
+nav a:hover,
+nav a.active {
+  background: lightgreen;
+}
+
+/* Hero image */
+.hero {
+  width: 100%;
+  min-height: 350px;
+  overflow: hidden;
+}
+
+.hero h2 {
+  font-weight: bold;
+}
+
+.hero p {
+  text-align: center;
+}
+
+/* Carousel */
+.carousel-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.carousel-container h3 {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.carousel {
+  position: relative;
+  max-width: 650px;
+  height: 450px;
+  margin: 0 auto;
+  overflow: hidden;
+  background: transparent;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.slides {
+  position: relative;
+}
+
+.slides img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70%;
+  height: 320px;
+  object-fit: cover;
+  margin: 55px 15% 0 15%;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 50%;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.prev:hover, .next:hover {
+  background: rgba(0,0,0,0.8);
+}
+
+/* Content */
+.container {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+/* Grid for Clothing & Crafts */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.2rem;
+  padding: 1rem;
+}
+
+figure img {
+  width: 100%;
+  border: 3px solid #2a2a72;
+  border-radius: 6px;
+  transition: transform .3s, box-shadow .3s;
+}
+
+figure img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0,0,0,.25);
+}
+
+figcaption {
+  margin-top: .5rem;
+  font-size: .9rem;
+  text-align: center;
+  color: lightgreen;
+}
+
+/* Video / Form limits */
+video, form {
+  max-width: 600px;
+  margin: 1rem auto;
+  display: block;
+}
+
+/* Footer */
+footer {
+  background: transparent;
+  color: green;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Mobile tweak */
+@media (max-width: 480px) {
+  nav a { display: block; margin: .25rem 0; }
+}
+
+/* Video Container */
+.video-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.video-container section {
+  flex: 1 1 30%;
+  max-width: 300px;
+  text-align: center;
+}
+
+.video-container video {
+  width: 100%;
+  height: auto;
+}
