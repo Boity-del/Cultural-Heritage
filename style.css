@@ -229,7 +229,7 @@ ol, ul {
 }
 
 .descriptions {
-  color: #D870DB; /* Pink-purple color */
+  color: white; /* Pink-purple color */
 }
 
 .descriptions li {
@@ -237,7 +237,7 @@ ol, ul {
 }
 
 .descriptions strong {
-  color: #D870DB; /* Pink-purple color */
+  color: white; 
 }
 
 /* Contact page form text color - BLACK */
@@ -265,4 +265,5 @@ form label {
   color: black;
   font-weight: bold;
 }
+
 
