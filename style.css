@@ -7,24 +7,24 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  color: #D870DB; 
+  color: white; 
   line-height: 1.6;
   min-height: 100vh;
 }
 
 h1, h2, h3, h4, h5, h6, p, li, strong, figcaption, a:not(nav a) {
-  color: #D870DB; 
+  color:white; 
 }
 
 header {
   background: transparent;
-  color: #D870DB; 
+  color: white; 
   padding: 20px;
   text-align: center;
 }
 
 header h2 {
-  color: #D870DB; 
+  color: white; 
 }
 
 header .tagline {
@@ -75,14 +75,14 @@ nav a.active {
 
 .hero h2 {
   font-weight: bold;
-  color: #D870DB; 
+  color: white; 
 }
 
 p {
   text-align: center;
   margin: 100px;
   font-size: 14px;
-  color: #D870DB; 
+  color:white; 
 }
 
 /* Carousel */
@@ -92,7 +92,7 @@ p {
 }
 
 .carousel-container h3 {
-  color: #D870DB; 
+  color:white; 
   margin-bottom: 10px;
 }
 
@@ -225,7 +225,7 @@ footer {
 }
 
 ol, ul {
-  color: #D870DB; /* Pink-purple color */
+  color: white; /* Pink-purple color */
 }
 
 .descriptions {
@@ -233,7 +233,7 @@ ol, ul {
 }
 
 .descriptions li {
-  color: #D870DB; /* Pink-purple color */
+  color: white; /* Pink-purple color */
 }
 
 .descriptions strong {
@@ -265,3 +265,4 @@ form label {
   color: black;
   font-weight: bold;
 }
+
