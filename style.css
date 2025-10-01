@@ -7,23 +7,25 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  color: blue-light;
+  color: #D870DB; /* Pink-purple color */
   line-height: 1.6;
   min-height: 100vh;
-  font-color: purple;
 }
 
-
+/* All text elements will inherit the body color */
+h1, h2, h3, h4, h5, h6, p, li, strong, figcaption, a:not(nav a) {
+  color: #D870DB; /* Pink-purple color */
+}
 
 header {
   background: transparent;
-  color: #fff;
+  color: #D870DB; /* Pink-purple color */
   padding: 20px;
   text-align: center;
 }
 
 header h2 {
-  color: blue-light;
+  color: #D870DB; /* Pink-purple color */
 }
 
 header .tagline {
@@ -32,7 +34,7 @@ header .tagline {
   opacity: 0.9;
 }
 
-/* Navigation */
+/* Navigation - EXCLUDED from color change */
 nav {
   background: transparent;
   display: flex;
@@ -44,18 +46,17 @@ nav {
 .home nav {
   flex-direction: column;
   align-items: center;
-  color: purple;
 }
 
 .home nav div {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  colour: purple;
 }
 
+/* Navigation links - EXCLUDED from color change */
 nav a {
-  color: royalblue;
+  color: royalblue; /* Keep original color */
   padding: 14px 20px;
   text-decoration: none;
   font-weight: bold;
@@ -77,14 +78,14 @@ nav a.active {
 
 .hero h2 {
   font-weight: bold;
-  coulor: purple;
+  color: #D870DB; /* Pink-purple color */
 }
 
 p {
   text-align: center;
   margin: 100px;
   font-size: 14px;
-  color: blue-violet;
+  color: #D870DB; /* Pink-purple color */
 }
 
 /* Carousel */
@@ -94,7 +95,7 @@ p {
 }
 
 .carousel-container h3 {
-  color: #fff;
+  color: #D870DB; /* Pink-purple color */
   margin-bottom: 10px;
 }
 
@@ -164,7 +165,7 @@ p {
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 1.2rem;
   padding: 1rem;
-  color: purple;
+  color: #D870DB; /* Pink-purple color */
 }
 
 figure img {
@@ -179,11 +180,12 @@ figure img:hover {
   box-shadow: 0 4px 12px rgba(0,0,0,.25);
 }
 
+/* Image captions - EXCLUDED from color change */
 figcaption {
   margin-top: .5rem;
   font-size: .9rem;
   text-align: center;
-  color: lightgreen;
+  color: lightgreen; /* Keep original color */
 }
 
 /* Video / Form limits */
@@ -196,7 +198,7 @@ video, form {
 /* Footer */
 footer {
   background: transparent;
-  color: green;
+  color: #D870DB; /* Pink-purple color */
   text-align: center;
   padding: 10px;
 }
@@ -226,9 +228,24 @@ footer {
   height: auto;
 }
 
+/* Additional styling for lists and other text elements */
+ol, ul {
+  color: #D870DB; /* Pink-purple color */
+}
 
+.descriptions {
+  color: #D870DB; /* Pink-purple color */
+}
 
+.descriptions li {
+  color: #D870DB; /* Pink-purple color */
+}
 
+.descriptions strong {
+  color: #D870DB; /* Pink-purple color */
+}
 
-change the color of all text in the pages (besides the caption) to pink-purple
-
+/* Ensure all links except nav links are pink-purple */
+a:not(nav a) {
+  color: #D870DB; /* Pink-purple color */
+}
