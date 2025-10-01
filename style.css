@@ -224,7 +224,6 @@ footer {
   height: auto;
 }
 
-
 ol, ul {
   color: #D870DB; /* Pink-purple color */
 }
@@ -241,3 +240,28 @@ ol, ul {
   color: #D870DB; /* Pink-purple color */
 }
 
+/* Contact page form text color - BLACK */
+form label,
+form input,
+form select,
+form textarea,
+form button {
+  color: black !important;
+}
+
+/* Ensure form placeholders are also visible */
+form input::placeholder,
+form textarea::placeholder {
+  color: #666 !important;
+  opacity: 1;
+}
+
+/* Form text and labels specifically */
+form {
+  color: black;
+}
+
+form label {
+  color: black;
+  font-weight: bold;
+}
