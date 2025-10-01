@@ -78,6 +78,7 @@ nav a.active {
 
 .hero p {
   text-align: center;
+  margin: 50px;
 }
 
 /* Carousel */
@@ -217,4 +218,5 @@ footer {
   width: 100%;
   height: auto;
 }
+
 
