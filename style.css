@@ -44,12 +44,14 @@ nav {
 .home nav {
   flex-direction: column;
   align-items: center;
+  color: purple;
 }
 
 .home nav div {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  colour: purple;
 }
 
 nav a {
@@ -75,6 +77,7 @@ nav a.active {
 
 .hero h2 {
   font-weight: bold;
+  coulor: purple;
 }
 
 p {
@@ -161,6 +164,7 @@ p {
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 1.2rem;
   padding: 1rem;
+  color: purple;
 }
 
 figure img {
@@ -227,3 +231,4 @@ footer {
 
 
 change the color of all text in the pages (besides the caption) to pink-purple
+
