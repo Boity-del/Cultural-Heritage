@@ -7,35 +7,24 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  color: white; /* Changed to white */
+  color: #D870DB; 
   line-height: 1.6;
   min-height: 100vh;
 }
 
-/* All text elements will inherit the body color - exclude contact page */
-body:not(.contact-page) h1,
-body:not(.contact-page) h2,
-body:not(.contact-page) h3,
-body:not(.contact-page) h4,
-body:not(.contact-page) h5,
-body:not(.contact-page) h6,
-body:not(.contact-page) p,
-body:not(.contact-page) li,
-body:not(.contact-page) strong,
-body:not(.contact-page) figcaption,
-body:not(.contact-page) a:not(nav a) {
-  color: white; /* Changed to white */
+h1, h2, h3, h4, h5, h6, p, li, strong, figcaption, a:not(nav a) {
+  color: #D870DB; 
 }
 
 header {
   background: transparent;
-  color: white; /* Changed to white */
+  color: #D870DB; 
   padding: 20px;
   text-align: center;
 }
 
 header h2 {
-  color: white; /* Changed to white */
+  color: #D870DB; 
 }
 
 header .tagline {
@@ -44,7 +33,6 @@ header .tagline {
   opacity: 0.9;
 }
 
-/* Navigation - EXCLUDED from color change */
 nav {
   background: transparent;
   display: flex;
@@ -64,9 +52,8 @@ nav {
   flex-wrap: wrap;
 }
 
-/* Navigation links - EXCLUDED from color change */
 nav a {
-  color: royalblue; /* Keep original color */
+  color: royalblue; 
   padding: 14px 20px;
   text-decoration: none;
   font-weight: bold;
@@ -88,14 +75,14 @@ nav a.active {
 
 .hero h2 {
   font-weight: bold;
-  color: white; /* Changed to white */
+  color: #D870DB; 
 }
 
 p {
   text-align: center;
   margin: 100px;
   font-size: 14px;
-  color: white; /* Changed to white */
+  color: #D870DB; 
 }
 
 /* Carousel */
@@ -105,7 +92,7 @@ p {
 }
 
 .carousel-container h3 {
-  color: white; /* Changed to white */
+  color: #D870DB; 
   margin-bottom: 10px;
 }
 
@@ -175,7 +162,7 @@ p {
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 1.2rem;
   padding: 1rem;
-  color: white; /* Changed to white */
+  color: #D870DB; 
 }
 
 figure img {
@@ -190,12 +177,11 @@ figure img:hover {
   box-shadow: 0 4px 12px rgba(0,0,0,.25);
 }
 
-/* Image captions - EXCLUDED from color change */
 figcaption {
   margin-top: .5rem;
   font-size: .9rem;
   text-align: center;
-  color: lightgreen; /* Keep original color */
+  color: lightgreen; 
 }
 
 /* Video / Form limits */
@@ -208,7 +194,7 @@ video, form {
 /* Footer */
 footer {
   background: transparent;
-  color: white; /* Changed to white */
+  color: #D870DB; 
   text-align: center;
   padding: 10px;
 }
@@ -238,43 +224,20 @@ footer {
   height: auto;
 }
 
-/* Additional styling for lists and other text elements */
-body:not(.contact-page) ol,
-body:not(.contact-page) ul {
-  color: white; /* Changed to white */
+
+ol, ul {
+  color: #D870DB; /* Pink-purple color */
 }
 
-body:not(.contact-page) .descriptions {
-  color: white; /* Changed to white */
+.descriptions {
+  color: #D870DB; /* Pink-purple color */
 }
 
-body:not(.contact-page) .descriptions li {
-  color: white; /* Changed to white */
+.descriptions li {
+  color: #D870DB; /* Pink-purple color */
 }
 
-body:not(.contact-page) .descriptions strong {
-  color: white; /* Changed to white */
+.descriptions strong {
+  color: #D870DB; /* Pink-purple color */
 }
 
-/* Ensure all links except nav links are white */
-body:not(.contact-page) a:not(nav a) {
-  color: white; /* Changed to white */
-}
-
-/* Contact page specific styles - keep original colors */
-.contact-page body {
-  color: #D870DB; /* Keep original pink-purple for contact page */
-}
-
-.contact-page h1,
-.contact-page h2,
-.contact-page h3,
-.contact-page h4,
-.contact-page h5,
-.contact-page h6,
-.contact-page p,
-.contact-page li,
-.contact-page strong,
-.contact-page a:not(nav a) {
-  color: #D870DB; /* Keep original pink-purple for contact page */
-}
