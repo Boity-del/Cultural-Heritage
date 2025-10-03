@@ -7,24 +7,24 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  color: white; 
+  color: white;
   line-height: 1.6;
   min-height: 100vh;
 }
 
 h1, h2, h3, h4, h5, h6, p, li, strong, figcaption, a:not(nav a) {
-  color:white; 
+  color: white;
 }
 
 header {
   background: transparent;
-  color: white; 
+  color: white;
   padding: 20px;
   text-align: center;
 }
 
 header h2 {
-  color: white; 
+  color: white;
 }
 
 header .tagline {
@@ -53,7 +53,7 @@ nav {
 }
 
 nav a {
-  color: royalblue; 
+  color: royalblue;
   padding: 14px 20px;
   text-decoration: none;
   font-weight: bold;
@@ -75,14 +75,14 @@ nav a.active {
 
 .hero h2 {
   font-weight: bold;
-  color: white; 
+  color: white;
 }
 
 p {
   text-align: center;
   margin: 100px;
   font-size: 14px;
-  color:white; 
+  color: white;
 }
 
 /* Carousel */
@@ -92,7 +92,7 @@ p {
 }
 
 .carousel-container h3 {
-  color:white; 
+  color: white;
   margin-bottom: 10px;
 }
 
@@ -128,7 +128,7 @@ p {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: rgba(0,0,0,0.5);
+  background: rgba(0, 0, 0, 0.5);
   color: white;
   border: none;
   padding: 10px;
@@ -146,7 +146,7 @@ p {
 }
 
 .prev:hover, .next:hover {
-  background: rgba(0,0,0,0.8);
+  background: rgba(0, 0, 0, 0.8);
 }
 
 /* Content */
@@ -156,32 +156,77 @@ p {
   padding: 20px;
 }
 
-/* Grid for Clothing & Crafts */
+/* Grid for Clothing */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 1.2rem;
   padding: 1rem;
-  color: #D870DB; 
 }
 
-figure img {
+/* Updated figure styles */
+.grid figure {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 2px solid #2a2a72;
+  background-color: rgba(255, 255, 255, 0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.grid figure:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.grid figure img {
   width: 100%;
-  border: 3px solid #2a2a72;
-  border-radius: 6px;
-  transition: transform .3s, box-shadow .3s;
+  height: 280px;
+  object-fit: cover;
+  display: block;
 }
 
-figure img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 12px rgba(0,0,0,.25);
-}
-
-figcaption {
-  margin-top: .5rem;
-  font-size: .9rem;
+.grid figure figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  font-size: 0.9rem;
+  background: rgba(0, 0, 0, 0.6);
+  color: lightgreen;
   text-align: center;
-  color: lightgreen; 
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.grid figure:hover figcaption {
+  opacity: 1;
+}
+
+.grid figure h2 {
+  text-align: center;
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+.grid figure a {
+  display: block;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  background: royalblue;
+  color: white;
+  text-decoration: none;
+  margin: 0.5rem auto;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+  max-width: 80%;
+}
+
+.grid figure a:hover {
+  background: lightgreen;
+  color: #333;
 }
 
 /* Video / Form limits */
@@ -194,14 +239,17 @@ video, form {
 /* Footer */
 footer {
   background: transparent;
-  color: #D870DB; 
+  color: #D870DB;
   text-align: center;
   padding: 10px;
 }
 
 /* Mobile tweak */
 @media (max-width: 480px) {
-  nav a { display: block; margin: .25rem 0; }
+  nav a {
+    display: block;
+    margin: .25rem 0;
+  }
 }
 
 /* Video Container */
@@ -225,19 +273,19 @@ footer {
 }
 
 ol, ul {
-  color: white; /* Pink-purple color */
+  color: white;
 }
 
 .descriptions {
-  color: white; /* Pink-purple color */
+  color: white;
 }
 
 .descriptions li {
-  color: white; /* Pink-purple color */
+  color: white;
 }
 
 .descriptions strong {
-  color: white; 
+  color: white;
 }
 
 /* Contact page form text color - BLACK */
@@ -249,14 +297,12 @@ form button {
   color: black !important;
 }
 
-/* Ensure form placeholders are also visible */
 form input::placeholder,
 form textarea::placeholder {
   color: #666 !important;
   opacity: 1;
 }
 
-/* Form text and labels specifically */
 form {
   color: black;
 }
@@ -266,80 +312,9 @@ form label {
   font-weight: bold;
 }
 
-/* Clothing Grid Layout */
-.clothing-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 1.5rem;
-  padding: 2rem;
-  max-width: 1400px;
-  margin: 0 auto;
-}
-
-.clothing-item {
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
-  overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-
-.clothing-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-}
-
-.clothing-item img {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-  border-bottom: 2px solid #2a2a72;
-}
-
-.clothing-content {
-  padding: 1rem;
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-}
-
-.clothing-content h2 {
-  margin: 0 0 0.5rem 0;
-  font-size: 1.2rem;
-  color: white;
-  text-align: center;
-}
-
-.clothing-content figcaption {
-  margin: 0.5rem 0;
-  font-size: 0.9rem;
-  color: lightgreen;
-  flex-grow: 1;
-}
-
-.clothing-content a {
-  display: inline-block;
-  margin-top: 0.5rem;
-  padding: 0.5rem 1rem;
-  background: royalblue;
-  color: white;
-  text-decoration: none;
-  border-radius: 4px;
-  text-align: center;
-  transition: background 0.3s ease;
-}
-
-.clothing-content a:hover {
-  background: lightgreen;
-  color: #333;
-}
-
 /* Responsive adjustments */
 @media (max-width: 768px) {
-  .clothing-grid {
+  .grid {
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     padding: 1rem;
     gap: 1rem;
@@ -347,9 +322,7 @@ form label {
 }
 
 @media (max-width: 480px) {
-  .clothing-grid {
+  .grid {
     grid-template-columns: 1fr;
   }
 }
-
-
