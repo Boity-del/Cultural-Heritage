@@ -266,4 +266,90 @@ form label {
   font-weight: bold;
 }
 
+/* Clothing Grid Layout */
+.clothing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.clothing-item {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.clothing-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.clothing-item img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-bottom: 2px solid #2a2a72;
+}
+
+.clothing-content {
+  padding: 1rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.clothing-content h2 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.2rem;
+  color: white;
+  text-align: center;
+}
+
+.clothing-content figcaption {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+  color: lightgreen;
+  flex-grow: 1;
+}
+
+.clothing-content a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: royalblue;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  text-align: center;
+  transition: background 0.3s ease;
+}
+
+.clothing-content a:hover {
+  background: lightgreen;
+  color: #333;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .clothing-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    padding: 1rem;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .clothing-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 
